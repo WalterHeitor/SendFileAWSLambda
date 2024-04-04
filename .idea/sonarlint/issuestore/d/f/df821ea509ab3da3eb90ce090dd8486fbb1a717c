@@ -1,0 +1,23 @@
+
+	java:S112`"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¨åŒ´ê1J$5d05c6c5-0ec6-483b-b625-89f76050ade7
+	java:S112Ÿ"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8©åŒ´ê1J$7e3dcdbe-37cc-46c0-8c0c-32c7f2790023
+@
+java:S2629L"$Invoke method(s) only conditionally.(­Á8š¹“¶ê1
+F
+java:S2629N"$Invoke method(s) only conditionally.(Š¯ú¸ùÿÿÿÿ8œ¹“¶ê1
+†
+java:S2184ƒ"BCast one of the operands of this addition operation to a "double".(×Êüû8®åŒ´ê1J$8ee525b8-1f32-4a1e-95f8-bd08d90ac991
+}
+java:S3457L"aNo need to call "toString()" method as formatting and string conversion is done by the Formatter.(­Á8ğ»“¶ê1
+ƒ
+java:S3457N"aNo need to call "toString()" method as formatting and string conversion is done by the Formatter.(Š¯ú¸ùÿÿÿÿ8ò»“¶ê1
+ƒ	java:S125P"<This block of commented-out lines of code should be removed.(ÂüÍ¢ıÿÿÿÿ8ºæŒ´ê1J$dfdcd8d2-ea0b-4041-b20e-f259bbab1366
+ƒ	java:S125T"<This block of commented-out lines of code should be removed.(Å¥üÙùÿÿÿÿ8»æŒ´ê1J$f11d2704-9715-4b33-b6a7-e0dc120702fe
+w
+java:S1172j"/Remove this unused method parameter "personId".(ˆ¿“¸ûÿÿÿÿ8ÌæŒ´ê1J$ab0a481f-257e-4483-bdb5-b1114a305d99
+`
+java:S2119r"Save and re-use this "Random".(¼İÅf8ØæŒ´ê1J$78b95313-501a-4e60-916d-c82cabe35a50
+°
+java:S1130’"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(£‰¯8èæŒ´ê1J$af3f4c81-4baf-4e03-a3d9-3d0c83d807b0
+†
+java:S1144¬"=Remove this unused private "generateHtmlFromTemplate" method.(ç—õÍûÿÿÿÿ8›çŒ´ê1J$51d6797e-1535-40a7-b275-277bf39fcbae

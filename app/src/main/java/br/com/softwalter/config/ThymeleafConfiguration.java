@@ -1,4 +1,4 @@
-package br.com.softwalter.cofing;
+package br.com.softwalter.config;
 
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.templateresolver.ClassLoaderTemplateResolver;

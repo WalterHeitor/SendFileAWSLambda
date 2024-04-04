@@ -39,11 +39,19 @@ dependencies {
     // https://mvnrepository.com/artifact/org.postgresql/postgresql
     implementation("org.postgresql:postgresql:42.7.2")
 
-
-
     // https://mvnrepository.com/artifact/org.slf4j/slf4j-simple
     implementation("org.slf4j:slf4j-simple:2.0.7")
     implementation(libs.guava)
+}
+
+tasks.jar {
+    manifest.attributes["Main-Class"] = "br.com.softwalter.App"
+    val dependencies = configurations
+            .runtimeClasspath
+            .get()
+            .map (::zipTree ) // OR .map { zipTree(it) }
+    from(dependencies)
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
 
 testing {
@@ -65,5 +73,5 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = "org.example.App"
+    mainClass = "br.com.softwalter.App"
 }

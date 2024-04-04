@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Informações da Pessoa e Contratos</title>
+</head>
+<body>
+<br>
+
+<h1>Informações da Pessoa</h1>
+<p>ID: <span th:text="${person.id}"></span></p>
+<p>Nome: <span th:text="${person.firstName}"></span> <span th:text="${person.lastName}"></span></p>
+<p>Email: <span th:text="${person.email}"></span></p>
+<p>Gênero: <span th:text="${person.gender}"></span></p>
+<p>Endereço IP: <span th:text="${person.ipAddress}"></span></p>
+
+<h2>Contratos</h2>
+<h3><span th:text="${contract.title.toString()}"></span></h3>
+<p>ID: <span th:text="${contract.id}"></span></p>
+<p>Descrição: <span th:text="${contract.description}"></span></p>
+<p>Data Início: <span th:text="${#dates.format(contract.startDate, 'dd/MM/yyyy')}"></span></p>
+<p>Data Fim: <span th:text="${#dates.format(contract.endDate, 'dd/MM/yyyy')}"></span></p>
+<p>Valor: R$ <span th:text="${contract.value}"></span></p>
+<p>Status: <span th:text="${contract.status}"></span></p>
+<h3>Tarefas:</h3>
+<ul>
+    <li>Desenvolver interfaces de usuário responsivas</li>
+    <li>Integrar APIs de back-end</li>
+    <li>Otimizar a experiência do usuário</li>
+    <!-- Adicione mais tarefas específicas para o contrato de Front-end Angular -->
+</ul>
+<!-- Adicione mais detalhes do contrato conforme necessário -->
+<hr>
+</body>
+</html>
