@@ -3,10 +3,6 @@
 	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 D
 app/build.gradle.kts,d/2/d2a4383452aad84a18429a5844d31330a012a9e6
-X
-(app/src/main/java/br/com/softwalter.java,9/9/99389524ce687c3d264b800876ab64bc387c216e
-v
-Fapp/src/main/java/br/com/softwalter/cofing/ThymeleafConfiguration.java,0/4/0413eda10fd27b8adf33622286d7b2e30abd7d7d
 Z
 *app/src/test/java/org/example/AppTest.java,2/9/297f0403617e3b8481c4ba6ebf282c500b72eaef
 f
@@ -35,3 +31,6 @@ R
 "docker_postgres/docker-compose.yml,8/2/827cb46b6c5ffa891a2c5ad4805595be3988da33
 C
 localstack/start.sh,e/3/e375730ca642c0d0642aa83646d674ee721930c9
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
