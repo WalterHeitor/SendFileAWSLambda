@@ -1,2 +1,8 @@
 
-b	java:S112/"FDefine and throw a dedicated exception instead of using a generic one.(‚îÂ«8∑’Ç¥Í1
+à	java:S1127"FDefine and throw a dedicated exception instead of using a generic one.(‚îÂ«8∑’Ç¥Í1J$53bf6022-da50-439a-9c66-b6ede1fdfbb6
+É	java:S125"<This block of commented-out lines of code should be removed.(‚Ÿòö¯ˇˇˇˇ8Ë©Â÷Î1J$b8fcf5ec-55e9-4891-96ec-b6bed5dc3049
+~	java:S125""<This block of commented-out lines of code should be removed.(¥¬ú§8ø«Ê÷Î1J$df3fee43-9dc0-4b02-8cb6-79fa0efa2faa
+Å
+java:S1128">Remove this unused import 'br.com.softwalter.entity.Contract'.(Ëó‡±8Õ«Ê÷Î1J$fb178735-fc94-4dc5-9de3-b72aaf72d311
+
+java:S1128"<Remove this unused import 'br.com.softwalter.entity.Person'.(áÿ∂ÿ8Œ«Ê÷Î1J$dcdabc35-5190-4cde-85e8-a86ac407ef81

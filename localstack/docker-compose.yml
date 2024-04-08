@@ -10,6 +10,10 @@ services:
     environment:
       # LocalStack configuration: https://docs.localstack.cloud/references/configuration/
       - DEBUG=${DEBUG:-0}
+      - DOCKER_HOST =unix:///var/run/docker.sock
+      - LAMBDA_REMOTE_DOCKER=true
+      - LAMBDA_RUNTIME_ENVIRONMENT_TIMEOUT=600
+#      - LAMBDA_EXECUTOR=docker  #docker-reuse  # To use Docker for Lambda execution
     volumes:
       - "${LOCALSTACK_VOLUME_DIR:-./volume}:/var/lib/localstack"
       - "/var/run/docker.sock:/var/run/docker.sock"

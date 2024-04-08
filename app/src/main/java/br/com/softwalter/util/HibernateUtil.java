@@ -18,12 +18,20 @@ public class HibernateUtil {
     public static SessionFactory getSessionFactory() {
         if (sessionFactory == null || sessionFactory.isClosed()) {
             try {
-                String userName = System.getenv("DATABASE_USERNAME");
-                String password = System.getenv("DATABASE_PASSWORD");
-                String dataBaseName = System.getenv("DATABASE_NAME");
-                String schema = System.getenv("DATABASE_SCHEMA");
-                String port = System.getenv("DATABASE_PORT");
-                String host = System.getenv("DATABASE_HOST");
+//                String userName = System.getenv("DATABASE_USERNAME");
+//                String password = System.getenv("DATABASE_PASSWORD");
+//                String dataBaseName = System.getenv("DATABASE_NAME");
+//                String schema = System.getenv("DATABASE_SCHEMA");
+//                String port = System.getenv("DATABASE_PORT");
+//                String host = System.getenv("DATABASE_HOST");
+                String postgres = "postgres";
+                String userName = postgres;
+                String password = postgres;
+                String dataBaseName = postgres;
+                String schema = "public";
+                String port = "5432";
+                String host = postgres;
+//                String host = "localhost";
 
                 Configuration configuration = new Configuration();
 

@@ -23,8 +23,6 @@ k
 ,app/src/main/java/br/com/softwalter/App.java,d/f/df821ea509ab3da3eb90ce090dd8486fbb1a717c
 v
 Fapp/src/main/java/br/com/softwalter/config/ThymeleafConfiguration.java,a/8/a82b8cf59e0d4385d9f0a82786a592b87c790362
-N
-localstack/dockerc-compose.yml,0/d/0db944987cf7d0fe0210b7713a5d02e973885037
 Q
 !docker_postgres/create_tables.sql,8/7/87f1fb8b50d4c7f5e93547e5434d82ebbe5a662e
 R
@@ -34,3 +32,7 @@ C
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+M
+localstack/docker-compose.yml,4/3/43e214733f81bfe7deff13772d0bda1461b11aa0
+V
+&postgres_localstack/docker-compose.yml,b/c/bc256227c16bb0d34c9f5a07af169749c0dd05f0

@@ -28,7 +28,12 @@ aws --endpoint http://localhost:4566 --profile localstack \
   --memory-size 128 \
   --zip-file fileb://app/build/libs/app.jar \
   --role arn:aws:iam::000000000000:role/lambda-execution --timeout 30000 \
-  --environment "Variables={DATABASE_USERNAME=postgres,DATABASE_PASSWORD=postgres,DATABASE_NAME=postgres,DATABASE_SCHEMA=public,DATABASE_PORT=5432,DATABASE_HOST=localhost}"
+  --environment Variables={DATABASE_USERNAME=postgres} \
+  --environment Variables={DATABASE_PASSWORD=postgres} \
+  --environment Variables={DATABASE_NAME=postgres} \
+  --environment Variables={DATABASE_SCHEMA=public} \
+  --environment Variables={DATABASE_PORT=5432} \
+  --environment Variables={DATABASE_HOST=localhost}
 
 # mapeamento de fonte de evento entre a fila SQS e a função Lambda
 aws --endpoint http://localhost:4566 --profile localstack \

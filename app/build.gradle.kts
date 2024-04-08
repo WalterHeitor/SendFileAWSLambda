@@ -44,16 +44,6 @@ dependencies {
     implementation(libs.guava)
 }
 
-tasks.jar {
-    manifest.attributes["Main-Class"] = "br.com.softwalter.App"
-    val dependencies = configurations
-            .runtimeClasspath
-            .get()
-            .map (::zipTree ) // OR .map { zipTree(it) }
-    from(dependencies)
-    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
-}
-
 testing {
     suites {
         // Configure the built-in test suite
@@ -74,4 +64,32 @@ java {
 application {
     // Define the main class for the application.
     mainClass = "br.com.softwalter.App"
+}
+
+//// Tarefa para criar um JAR com todas as dependências
+//tasks.register<Jar>("assembleFatJar") {
+//    manifest {
+//        attributes["Main-Class"] = "br.com.softwalter.App"
+//    }
+//    from(configurations.runtimeClasspath.get().map { if (it.isDirectory) it else zipTree(it) })
+//    // Define o diretório de saída do JAR
+//    destinationDirectory.set(file("build/libs"))
+//    // Nome do arquivo JAR gerado
+//    archiveFileName.set("meu-app.jar")
+//
+//    // Configura a estratégia de tratamento de duplicatas
+//    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+//}
+//
+//// Define que a tarefa assembleFatJar deve ser executada antes da tarefa build
+//tasks.getByName("build").dependsOn(tasks.getByName("assembleFatJar"))
+
+tasks.jar {
+    manifest.attributes["Main-Class"] = "br.com.softwalter.App"
+    val dependencies = configurations
+        .runtimeClasspath
+        .get()
+        .map (::zipTree ) // OR .map { zipTree(it) }
+    from(dependencies)
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
